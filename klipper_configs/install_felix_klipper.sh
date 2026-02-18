@@ -109,10 +109,10 @@ echo "Ownership of .cfg files inside Klipper directory were updated."
 #echo "Repetier-Server service started."
 
 # Cleanup files and folder
-#rm -r /home/$INSTALL_DIR
+rm -r /home/pi/Test-repo
 #rm $PRINTER_DIR/unique.bkp
 #rm /home/pi/Downloads/SAVE_CONFIG.txt
-#echo "Cleaning up files completed."
+echo "Cleaning up files completed."
 
 # Installation completed
 echo "Klipper config file installation completed successfully."
