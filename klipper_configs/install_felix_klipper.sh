@@ -4,7 +4,7 @@ echo "This script must be run as Root user."
 DIRECTORY=`dirname ${BASH_SOURCE[0]}`
 INSTALLER="$0"
 #SERVER_FILE=klipper-configs.git
-INSTALL_DIR=new_klipper_configs
+#INSTALL_DIR=new_klipper_configs
 BACKUP_DIR=backups
 cd "$DIRECTORY"
 DIRECTORY="$( pwd )"
