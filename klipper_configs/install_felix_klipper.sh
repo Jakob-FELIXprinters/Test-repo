@@ -109,7 +109,7 @@ echo "Ownership of .cfg files inside Klipper directory were updated."
 #echo "Repetier-Server service started."
 
 # Cleanup files and folder
-rm -r /var/lib/Repetier-Server/scripts/Test-repo/
+rm -r /var/lib/Repetier-Server/scripts/Test-repo
 #rm $PRINTER_DIR/unique.bkp
 #rm /home/pi/Downloads/SAVE_CONFIG.txt
 echo "Cleaning up files completed."
