@@ -9,8 +9,8 @@ BACKUP_DIR=backups
 cd "$DIRECTORY"
 DIRECTORY="$( pwd )"
 echo "Directory $DIRECTORY."
-PRINTER_DIR=/home/pi/Downloads/fake_klipper_configs
-#PRINTER_DIR=/var/lib/Repetier-Server/database/klipper
+#PRINTER_DIR=/home/pi/Downloads/fake_klipper_configs
+PRINTER_DIR=/var/lib/Repetier-Server/database/klipper_fake
 echo "Printer directory $PRINTER_DIR."
 
 # Show a list of the .cfg files in the klipper directory
@@ -109,7 +109,7 @@ echo "Ownership of .cfg files inside Klipper directory were updated."
 #echo "Repetier-Server service started."
 
 # Cleanup files and folder
-rm -r /home/pi/Test-repo
+rm -r /var/lib/Repetier-Server/scripts/Test-repo/klipper_configs
 #rm $PRINTER_DIR/unique.bkp
 #rm /home/pi/Downloads/SAVE_CONFIG.txt
 echo "Cleaning up files completed."
