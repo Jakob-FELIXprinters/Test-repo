@@ -56,7 +56,7 @@ if [ ! -s "$PRINTER_DIR/FELIX_Pro_3.cfg" ]; then
     echo "No FELIX_Pro_3.cfg file was found. If this is a new printer, you can ignore this warning."
     save_config_saved=false
 else
-    sed -n '/#*# <---------------------- SAVE_CONFIG ---------------------->/, $ p' < $PRINTER_DIR/FELIX_Pro_3.cfg > /home/pi/Downloads/SAVE_CONFIG.txt
+    sed -n '/#*# <---------------------- SAVE_CONFIG ---------------------->/, $ p' < $PRINTER_DIR/FELIX_Pro_3.cfg > $DIRECTORY/SAVE_CONFIG.txt
     echo "SAVE_CONFIG section is saved."
     save_config_saved=true
 fi
@@ -94,7 +94,7 @@ fi
 if [ "$save_config_saved" = true ]; then
     sed -i '$a\\
     ' $PRINTER_DIR/FELIX_Pro_3.cfg
-    cat /home/pi/Downloads/SAVE_CONFIG.txt >> $PRINTER_DIR/FELIX_Pro_3.cfg
+    cat $DIRECTORY/SAVE_CONFIG.txt >> $PRINTER_DIR/FELIX_Pro_3.cfg
     echo "SAVE_CONFIG has been restored."
 else
     echo "No SAVE_CONFIG section was found in the original FELIX_Pro_3.cfg file, so no SAVE_CONFIG section will be restored."
